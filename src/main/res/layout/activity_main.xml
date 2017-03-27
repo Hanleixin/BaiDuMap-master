@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.mylocation.MainActivity">
+
+   <LinearLayout
+
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/poiClick"
+          android:text="公交检索"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+      <Button
+          android:id="@+id/nextClick"
+          android:text="下一条路线"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+
+
+   <com.baidu.mapapi.map.MapView
+       android:id="@+id/mapView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></com.baidu.mapapi.map.MapView>
+</LinearLayout>
